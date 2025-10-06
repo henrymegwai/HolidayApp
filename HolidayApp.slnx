@@ -1,4 +1,5 @@
 <Solution>
+  <Folder Name="/azure-pipeline/" />
   <Folder Name="/src/">
     <Project Path="src/HolidayApp.Application/HolidayApp.Application.csproj" />
     <Project Path="src/HolidayApp.Domain/HolidayApp.Domain.csproj" />
