@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/HolidayApp.Application/HolidayApp.Application.csproj" />
+    <Project Path="src/HolidayApp.Domain/HolidayApp.Domain.csproj" />
+    <Project Path="src/HolidayApp.Infrastructure/HolidayApp.Infrastructure.csproj" />
+    <Project Path="src\HolidayApp.Api\HolidayApp.Api.csproj" Type="Classic C#" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests\HolidayApp.UnitTests\HolidayApp.UnitTests.csproj" Type="Classic C#" />
+  </Folder>
+</Solution>

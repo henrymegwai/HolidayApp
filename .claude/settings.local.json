@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dotnet add:*)",
+      "Bash(dotnet build:*)",
+      "Bash(dotnet tool list:*)",
+      "Bash(dotnet ef migrations add:*)",
+      "Bash(dir:*)",
+      "Bash(timeout 300 dotnet ef migrations add InitialCreate --project src/HolidayApp.Infrastructure --startup-project src/HolidayApp.Api --verbose)",
+      "Bash(dotnet new:*)",
+      "Bash(dotnet test:*)",
+      "Bash(Select-String -Pattern \"Error Message\" -Context 0,15)",
+      "Bash(findstr:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
