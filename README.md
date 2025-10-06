@@ -2,6 +2,9 @@
 
 A .NET 8 Web API for managing and querying public holidays across countries using the [Nager.Date API](https://date.nager.at/Api).
 
+<img width="1712" height="700" alt="image" src="https://github.com/user-attachments/assets/80edca29-d3d8-4ced-8795-88d13375685d" />
+
+
 ## Features
 
 - Load and cache country data from Nager.Date API
