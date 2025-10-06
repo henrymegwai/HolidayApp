@@ -97,7 +97,7 @@ Adjust logging levels in `appsettings.json`:
    ```
 
 4. **Access Swagger UI**
-   - Open your browser to: `https://localhost:5001` or `http://localhost:5000`
+   - Open your browser to: `https://localhost:7199` or `http://localhost:5296` or `http://localhost:45058` depending on the project launch profile used.
    - Swagger UI is available at the root URL (`/`)
 
 ### Using Visual Studio
@@ -169,6 +169,7 @@ curl "https://localhost:5001/api/holidays/common?year=2024&countryCode1=US&count
 - **HolidayApp.Application** - Business logic, CQRS (Commands/Queries), DTOs
 - **HolidayApp.Infrastructure** - Data access, external services, EF Core
 - **HolidayApp.Api** - Controllers, middleware, API configuration
+- **HolidayApp.UnitTests** -  Unit Tests - xUnit, FluentAssertions, NSubstitute
 
 ### Design Patterns
 
@@ -187,6 +188,7 @@ curl "https://localhost:5001/api/holidays/common?year=2024&countryCode1=US&count
 - **FluentValidation** - Input validation
 - **Polly** - Resilience and transient fault handling
 - **Swagger/OpenAPI** - API documentation
+- **xUnit, NSubstitute, FluenAssertion** - Unit Testing Implementation
 
 
 ## Database Schema
@@ -258,6 +260,13 @@ dotnet build --configuration Release
 dotnet publish --configuration Release --output ./publish
 ```
 
+## CI/CD
+
+The project includes an Azure Pipeline configuration at [azure-pipelines/holiday-app-pipelines.yml](azure-pipelines/holiday-app-pipelines.yml) that automates:
+- Building the solution
+- Running unit tests
+- Building and pushing Docker images to Azure Container Registry
+
 
 ## Troubleshooting
 
@@ -266,11 +275,6 @@ dotnet publish --configuration Release --output ./publish
 1. **Connection string errors:**
    - Verify server name in connection string
    - Check SQL Server is running: `services.msc` → SQL Server service
-
-
-## Testing
-
-- Unit Tests - xUnit, FluentAssertions, NSubstitute
 
 
 
