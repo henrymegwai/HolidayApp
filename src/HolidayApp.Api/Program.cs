@@ -24,7 +24,7 @@ builder.Services.AddMemoryCache();
 
 // Add health checks
 builder.Services.AddHealthChecks()
-    .AddDbContextCheck<ApplicationDbContext>("database");
+    .AddDbContextCheck<ApplicationDbContext>("HolidayAppDb");
 
 // Validate container configuration at startup
 builder.Services.AddOptions<ServiceProviderOptions>()
